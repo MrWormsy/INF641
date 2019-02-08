@@ -6,8 +6,8 @@ public class TP1 {
 		
 		Bookshelf bookshelf = new Bookshelf();
 		
-		Author author1 = new Author("Gege", "Noir", "Antillais");
-		Author author2 = new Author("Kave", "Le sang", "Perse");
+		Author author1 = new Author("Gege", "Bleu", "Antillais");
+		Author author2 = new Author("Kkour", "Le sang", "Perse");
 		
 		Book book1 = new Book("Test", author1, 0);
 		Book book2 = new Book("Test2", author1, 0);
@@ -16,6 +16,15 @@ public class TP1 {
 		People people1 = new People("Deny", "");
 		People people2 = new People("Mary", "");
 		People people3 = new People("Poupoule", "");
+		
+		Spell spell1 = new Spell("Boulle de feu");
+		Spell spell2 = new Spell("Soin");
+		
+		people1.addSpell(spell1);
+		people2.addSpell(spell2);
+		
+		people3.addSpell(spell1);
+		people3.addSpell(spell2);
 		
 		book1.addPeople(people1);
 		

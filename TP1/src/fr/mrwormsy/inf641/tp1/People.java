@@ -37,6 +37,10 @@ public class People {
 	public void setSpells(ArrayList<Spell> spells) {
 		this.spells = spells;
 	}
+	
+	public void addSpell(Spell spell) {
+		this.spells.add(spell);
+	}
 
 	@Override
 	public String toString() {
